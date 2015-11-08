@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>demo</title>
+    <link href="dist/css/ts-datepicker.css" rel="stylesheet" type="text/css" />
+    <script src="dist/js/jquery-1.11.3.min.js" type="text/javascript"></script>
+    <script src="dist/js/ts-datepicker1.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+
+    $().ready(function(){
+        $(".ts-datepicker-group").tsdatepickergroup({min:'2014-2-1',max:'2014-5-14'});
+    });
+
+    function ok(){
+        alert($(".ts-datepicker-group").tsdatepickergroup("getStartDate"));
+        alert($(".ts-datepicker-group").tsdatepickergroup("getEndDate"));
+        alert($(".ts-datepicker-group").tsdatepickergroup("getState"));
+    }
+</script>
+
+</head>
+
+<body>
+
+<div class="ts-datepicker-group" onselectstart="return false;">
+    <span>起始日期：</span> <input type="text" data-id="startdate" class="ts-datepicker" />
+    <span>结束日期：</span> <input type="text" data-id="enddate" class="ts-datepicker" />
+    <label for="ckRegion">区间模式</label><input type="checkbox" id="ckRegion" checked />
+</div>
+
+<input type="button" value="显示" onclick="ok();" />
+
+</body>
+</html>
