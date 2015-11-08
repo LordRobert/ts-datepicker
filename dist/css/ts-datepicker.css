@@ -1,0 +1,91 @@
+@charset "utf-8";
+
+.ts-datepicker-group{
+    -moz-user-select:none;
+}
+
+
+.ts-datepicker{
+	padding-right: 20px;
+	/*background: #fff url("../img/calendar.png") no-repeat scroll 98% center;*/
+    background-image: url("../img/calendar.png");
+    background-repeat: no-repeat;
+    background-position: 98% center;
+	border: 1px solid #ABADB3;
+    border-radius: 0;
+    cursor: pointer;
+    /*font-size: 12px;
+    height: 17px;
+    line-height: 17px;*/
+    /*width: 80px;*/
+    /*color: #555;*/
+}
+
+.ts-dp-panel{
+	position: absolute;
+	background-color: #fff;
+    border: 1px solid #bfbfbf;
+    border-radius: 3px;
+    /*top: 47px;*/
+    /*right: 53px;*/
+    /*font-size: 11px;*/
+    padding: 10px;
+    z-index: 999;
+}
+
+
+.ts-dp-panel select{
+	
+	-moz-appearance: none;
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background: #fff url("../img/slct-dwn.png") no-repeat scroll right center;
+    border-color: #ccc -moz-use-text-color #ccc #ccc;
+    border-image: none;
+    border-radius: 3px;
+    border-style: solid none solid solid;
+    border-width: 1px medium 1px 1px;
+    outline: medium none;
+    padding-right: 25px;
+    vertical-align: middle;
+    cursor: pointer;
+    padding: 2px 3px;
+    font-size: 14px;
+
+}
+
+.ts-dp-y{
+    width:70px;
+}
+.ts-dp-m, .ts-dp-d{
+    width:50px;
+    margin-left: 5px;
+}
+
+.ts-dp-btngp {
+	text-align: center;
+	margin-top:10px;
+}
+
+.ts-dp-btngp button{
+	padding: 3px 15px;
+	background-color: #0b3851;
+    color: white;
+    cursor: pointer;
+    border: 0;
+}
+
+.ts-dp-btngp button:first-child{
+	margin-right: 10px;
+}
+
+
+html,body{
+    width:100%;height:100%;
+}
+
+.ts-datepicker.disabled{
+    background-color: #aaa;
+}
