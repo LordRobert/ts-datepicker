@@ -34,3 +34,5 @@ $(".ts-datepicker-group").tsdatepickergroup({min:'2014-2-1',max:'2014-5-14'});
 1，此控件依赖于jquery，请在引入此文件前引入jquery，支持jquery1.3.1+，更低版本未做测试
 2，如果指定了split，则min/max中分隔符也需要使用此split
 2，min/max配置错误会导致退出：错误原因主要有：配置格式错误、最小日期大于最大日期等
+
+add by lordrobert 20160606
